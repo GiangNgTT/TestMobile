@@ -16,7 +16,7 @@ const Banner = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
   },
   banner_img: {
     width: 380,

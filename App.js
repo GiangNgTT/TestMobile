@@ -52,8 +52,7 @@ function App() {
           options={({route, navigation}) => {
             return {
               headerTitleAlign: 'center',
-              // title: route?.params?.headerTitle,
-              title: 'Product 1',
+              title: 'Category Listing',
             };
           }}
           name={'CategoryListing'}

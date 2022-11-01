@@ -64,7 +64,7 @@ const AllProducts = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    paddingTop: '0%'
   },
   name: {
     fontSize: 16,
@@ -73,12 +73,11 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   list: {
-    flex: 1,
     paddingHorizontal: 2,
   },
   item: {
     flexWrap: 'wrap',
-    width: '50%',
+    width: '20%',
     shadowColor: '#000',
     shadowRadius: 4,
     shadowOpacity: 0.25,
@@ -86,8 +85,8 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   image: {
-    width: 130,
-    height: 130,
+    width: 120,
+    height: 100,
   },
   wrapText: {
     marginLeft: 8,

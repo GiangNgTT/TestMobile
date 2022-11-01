@@ -23,6 +23,7 @@ const TopProducts = () => {
     fetch(apiURL)
       .then(res => res.json())
       .then(resJson => {
+        console.log(resJson);
         setData(resJson);
       })
       .catch(error => {
@@ -33,12 +34,10 @@ const TopProducts = () => {
 
   renderItem = ({item, index}) => {
     return (
-      <View>
-        <View style={styles.item}>
-          <Image style={styles.image} source={{uri: item.url}} />
-          <View style={styles.wrapText}>
-            <Text>{item.title}</Text>
-          </View>
+      <View style={styles.item}>
+        <Image style={styles.image} source={{uri: item.url}} />
+        <View style={styles.wrapText}>
+          <Text>{item.title}</Text>
         </View>
       </View>
     );
@@ -63,9 +62,6 @@ const TopProducts = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   name: {
     fontSize: 16,
     fontWeight: 'bold',
@@ -73,12 +69,11 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   list: {
-    flex: 1,
     paddingHorizontal: 2,
   },
   item: {
     flexWrap: 'wrap',
-    width: '50%',
+    width: '20%',
     shadowColor: '#000',
     shadowRadius: 4,
     shadowOpacity: 0.25,
@@ -86,8 +81,8 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   image: {
-    width: 130,
-    height: 130,
+    width: 120,
+    height: 100,
   },
   wrapText: {
     marginLeft: 8,
