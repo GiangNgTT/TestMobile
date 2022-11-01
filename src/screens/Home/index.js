@@ -19,6 +19,7 @@ const Home = ({navigation}) => {
               headerTitle: 'Category Listing',
             });
           }}
+    
         />
       </View>
     </View>
@@ -31,6 +32,6 @@ const styles = StyleSheet.create({
   img: {
     position: 'absolute',
     width: '100%',
-    height: 700,
+    height: 800,
   },
 });
